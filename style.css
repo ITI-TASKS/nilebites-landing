@@ -1,0 +1,117 @@
+/* =============================================
+   Hero Section
+============================================= */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  background-image: 
+    linear-gradient(rgba(44, 62, 80, 0.72), rgba(192, 57, 43, 0.65)),
+    url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.4));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: clamp(3.5rem, 8vw, 6.2rem);
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  line-height: 1.05;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  letter-spacing: -1px;
+}
+
+.hero p {
+  font-size: clamp(1.3rem, 4vw, 1.75rem);
+  font-weight: 400;
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  opacity: 0.95;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 2.4rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.28s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: #c0392b;
+  color: white;
+  box-shadow: 0 6px 20px rgba(192, 57, 43, 0.35);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2.5px solid white;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.btn-primary:hover {
+  background-color: #a93226;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255,255,255,0.12);
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .hero {
+    min-height: 85vh;
+  }
+  
+  .hero h1 {
+    font-size: clamp(2.8rem, 10vw, 4.2rem);
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+  }
+  
+  .btn {
+    padding: 0.9rem 2rem;
+    font-size: 1.05rem;
+  }
+}
