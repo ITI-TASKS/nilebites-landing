@@ -1,0 +1,26 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Segoe UI', sans-serif; }
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(44,62,80,0.8), rgba(192,57,43,0.7)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 { font-size: 4.8rem; margin-bottom: 1rem; }
+.hero-content p { font-size: 1.8rem; margin-bottom: 3rem; }
+
+.btn {
+    padding: 16px 40px;
+    margin: 0 15px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn:first-child { background:#c0392b; color:white; }
+.btn:last-child { background:transparent; border:3px solid white; color:white; }
